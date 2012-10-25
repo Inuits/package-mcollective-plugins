@@ -1,7 +1,6 @@
 #!/bin/bash
 
-RPM_TOPDIR="${RPM_TOPDIR-~/rpmbuild}"
-
+RPM_TOPDIR="${RPM_TOPDIR-${HOME}/rpmbuild}"
 
 GIT_REV=$(grep -E "^%define gitrev" mcollective-plugins.spec | awk '{print $3}')
 
